@@ -32,6 +32,7 @@ def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -
     Nodes represent network devices (routers, switches, endpoints).
     Edges represent connections between devices.
     Here's a Python implementation demonstrating this concept:
+
 ```
 class NetworkNode:
     def __init__(self, id):
@@ -50,7 +51,6 @@ def lowestCommonAncestor(root, p, q):
         return root
     return left if left else right
 
-# Create a sample network topology
 def create_network_topology():
     root = NetworkNode(1)  # Core router
     root.left = NetworkNode(2)  # Distribution switch 1
@@ -61,12 +61,10 @@ def create_network_topology():
     root.right.right = NetworkNode(7)  # Access switch 4
     return root
 
-# Find the optimal routing point between two network devices
 def find_optimal_routing_point(topology, device1, device2):
     lca = lowestCommonAncestor(topology, device1, device2)
     return lca.id
 
-# Example usage
 network = create_network_topology()
 device1 = network.left.left  # Device connected to Access switch 1
 device2 = network.right.left  # Device connected to Access switch 3
