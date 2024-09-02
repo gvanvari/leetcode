@@ -29,9 +29,9 @@ def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -
 
 ## Network routing
     Let's consider a simplified network topology represented as a tree, where:
-    Nodes represent network devices (routers, switches, endpoints)
-    Edges represent connections between devices
-Here's a Python implementation demonstrating this concept:
+    Nodes represent network devices (routers, switches, endpoints).
+    Edges represent connections between devices.
+    Here's a Python implementation demonstrating this concept:
 ```
 class NetworkNode:
     def __init__(self, id):
